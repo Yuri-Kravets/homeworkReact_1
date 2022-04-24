@@ -5,7 +5,7 @@ class VideoFrame extends HTMLElement {
         super();
         const shadow = this.attachShadow({mode:'open'});
 
-        //shadow.append('iframe');
+
 
         let iframe = document.createElement('iframe');
         iframe.setAttribute('src','https://www.youtube.com');
@@ -20,16 +20,3 @@ class VideoFrame extends HTMLElement {
 }
 customElements.define('yt-video',VideoFrame);
 })();
-
-// class VideoFrame extends HTMLElement {
-//     constructor() {
-//         super();
-//         const shadow = this.attachShadow({mode:'open'});
-//
-//         shadow.append('body is good');
-//         const iframe = document.createElement("iframe");
-//     }
-//
-//
-// }
-// customElements.define('yt-video',VideoFrame);
